@@ -7,7 +7,7 @@ interface Props {
 const Navbar = ({ pressed }: Props) => {
   return (
     <div className="h-full w-64 fixed z-10 top-0 left-0 overflow-x-hidden pt-5 border-r-2 border-r-gray-300">
-      <Link to="/home">
+      <Link to="/">
         <div
           className={`p-2 ml-2 mr-2 mb-2 rounded-2xl ${
             pressed === 'Home' ? 'bg-gray-600' : ''
