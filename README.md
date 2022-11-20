@@ -1,4 +1,4 @@
-# ahuri-app/backend
+# ahuri-app/frontend
 
 This repository is for our frontend (landing page and webapp)
 
