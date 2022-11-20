@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+  @apply text-white text-lg;
+}
+
+button,
+button[type='submit'] {
+  @apply p-2 duration-150 text-white bg-blue-600 hover:bg-blue-700 rounded-lg;
+}
+
+a {
+  @apply text-blue-600 hover:text-blue-700 text-lg;
+}
+
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-700;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+  @apply p-2 border-2 border-[#080808] text-white text-lg rounded-xl;
+}
+
+input[type='checkbox'] {
+  @apply appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-transparent checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer;
+}
+
+label {
+  @apply inline-block text-black cursor-pointer;
+}
+
+table {
+  @apply w-full mb-2;
+}
+
+tr {
+  @apply border-b-2 border-b-gray-600;
+}
+
+th {
+  @apply text-left p-2;
+}
+
+td {
+  @apply p-2;
+}
+
+.center-vertically-horizontally {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
